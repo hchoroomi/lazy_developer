@@ -1,0 +1,16 @@
+require 'lazy_developer'
+
+
+
+
+
+
+puts "Lazy Developer v=#{LazyDeveloper::VERSION}"
+
+case ARGV[0]
+  when "install"
+    LazyDeveloper.install
+  when ""
+    puts "Try using   lazy_developer install"
+end
+

@@ -1,0 +1,16 @@
+CHANGES
+Manifest.txt
+README.rdoc
+Rakefile
+bin/lazy_developer
+lib/lazy_developer.rb
+lib/lazy_developer/tasks/rails.rb
+lib/lazy_developer/tasks/lazy_developer_tasks.rake
+lib/lazy_developer/tasks/db_migrate_merge.rake
+lib/lazy_developer/tasks/db_translate.rake
+lib/lazy_developer/tasks/git.rake
+lib/lazy_developer/tasks/nuke.rake
+lib/lazy_developer/tasks/rcov.rake
+lib/lazy_developer/tasks/rspec.rake
+lib/lazy_developer/tasks/svn.rake
+lib/lazy_developer/tasks/test_unit.rake

@@ -5,8 +5,27 @@ Developers are lazy. I know I am. If I have to do things over and over, I want
 them to be automated. Maybe that's efficient and not lazy. However, lazy is a 
 shorter word and it's funnier to call this plugin LazyDeveloper.
 
-This plugin provides some useful Rake tasks that will make your life a little
+This gem provides some useful Rake tasks that will make your life a little
 easier. I use them in many of my projects and I invite you to do the same.
+
+= Installation
+
+LazyDeveloper is distributed as a gem. Installation is easy and can be done with
+
+  sudo gem install lazy_developer
+
+Once installed, you can include LazyDeveloper in your project by running the following command in your Rails application's root:
+  
+  lazy_developer install
+    
+This will add the appropriate lines to your application's Rakefile to include the Rake tasks, as Rake tasks can't be seen from Gems yet.
+
+== Upgrading?
+
+If you're upgrading from the plugin version of Lazy Developer, all you need to do is remove the plugin from the vendor/rails folder.
+
+
+
 
 = Usage
 
