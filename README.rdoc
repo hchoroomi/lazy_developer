@@ -24,9 +24,6 @@ This will add the appropriate lines to your application's Rakefile to include th
 
 If you're upgrading from the plugin version of Lazy Developer, all you need to do is remove the plugin from the vendor/rails folder.
 
-
-
-
 = Usage
 
 == Nuke
@@ -92,6 +89,9 @@ data from SQL Server to MySQL and back again.
 
 === rake db:from_yaml (formerly rake:db:export)
 Load fixtures from RAILS_ROOT/production_data into your database. Loads fixtures dumped by using rake db:export
+
+=== rake db:migrate:compact
+Uses schema.rb to construct a brand new clean migration and moves all of your existing migrations out of the way. This might at first seem to violate the spirit of migrations, but honestly sometimes large projects have a LOT of migrations and it can get difficult to manage these files.
 
 == Subversion
 
