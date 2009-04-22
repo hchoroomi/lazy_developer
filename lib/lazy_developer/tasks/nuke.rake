@@ -14,25 +14,25 @@ namespace :nuke do
         nuke_controller(file)
         nuke_helper(file)
         nuke_view(file)
-      when "all", "resource", "mvc"
+      when "mvc"
         nuke_model(file)
         nuke_controller(file)
         nuke_helper(file)
+        nuke_view(file)
+      when "view", "v"
         nuke_view(file)
       when "model", "m"
         nuke_model(file)
       when "controller", "c"
         nuke_controller(file)
       when "helper", "h"
-        nuke_helper(file)
-                  
+        nuke_helper(file)       
     end    
   end
   
   def nuke_view(f)
         remove "app/views/#{f}"
         remove "spec/views/#{f}"
-        
   end
   
   def nuke_model(f)
@@ -44,8 +44,8 @@ namespace :nuke do
   def nuke_helper(f)
     remove "app/helpers/#{f}_helper.rb"
     remove "spec/helpers/#{f}_helper_spec.rb"
-    
   end
+  
   def nuke_controller(f)
     remove "app/controllers/#{f}_controller.rb"
     remove "spec/controllers/#{f}_controller_spec.rb"
