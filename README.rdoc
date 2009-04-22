@@ -56,7 +56,8 @@ The nuke tasks can be quite granular.
  * rake nuke:vc:user
  * rake nuke:mvc:user
  
-The only thing these tasks won't do is remove migrations, and that's cos I think that's dangerous.
+
+The only thing these tasks won't do is remove migrations, and that's cos I think that's dangerous
 
 == Databases
 
