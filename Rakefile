@@ -23,4 +23,8 @@ Hoe.new('lazy_developer', LazyDeveloper::VERSION) do |p|
    p.summary = "Lazy Developer provides macros and scripts to make development of Rails applications easier."
 end
 
+task :gemspec do
+  system "rake debug_gem | grep -v \"(in \" > `basename \\`pwd\\``.gemspec"
+end
+
 # vim: syntax=Ruby
